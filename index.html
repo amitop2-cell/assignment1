@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Amit Amarcholi | Resume</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<button class="toggle-btn" type="button" onclick="toggleDarkMode()">🌙 Dark Mode</button>
+
+<div class="container">
+  <aside class="sidebar">
+    <img src="my-photo.jpg" alt="Amit Amarcholi" class="profile-img">
+    <h2 class="sidebar-name">Amit Amarcholi</h2>
+    <p class="sidebar-subtitle">Student | YouTuber</p>
+    <hr>
+    <div class="sidebar-section">
+      <h3>Personal Info</h3>
+      <p><strong>Birthday:</strong> 04/02/2006</p>
+      <p><strong>Location:</strong> Bhavnagar</p>
+      <p><strong>Email:</strong> amitamarcholiop2@gmail.com</p>
+    </div>
+    <hr>
+    <div class="sidebar-section">
+      <h3>Skills</h3>
+      <p>Graphic Design</p>
+      <p>Web designing</p>
+      <p>Video Editing</p>
+      <p>Management</p>
+    </div>
+    <hr>
+    <div class="sidebar-section">
+      <h3>Socials</h3>
+      <p><a href="https://www.youtube.com/@AmitOp2" target="_blank">YouTube</a></p>
+      <p><a href="https://www.instagram.com/amit_op2/" target="_blank">Instagram</a></p>
+    </div>
+  </aside>
+
+  <main class="main">
+    <section class="card">
+      <h2>About Me</h2>
+      <p>I am a student and YouTuber who learns about finance, marketing, and entrepreneurship and enjoys creating content.</p>
+    </section>
+
+    <section class="card">
+      <h2>Education</h2>
+      <p><strong>12th Result:</strong> 64%</p>
+      <br>
+      <p><strong>Degree:</strong> BBA(DBE)</p>
+      <p><strong>Institution:</strong> IIM Bangalore</p>
+      <br>
+      <p><strong>Degree:</strong> B.Com</p>
+      <p><strong>Institution:</strong> The KPES College</p>
+    </section>
+
+    <section class="card">
+      <h2>Experience</h2>
+      <p><strong>🎥 YouTube Creator</strong> – Created and managed a YouTube channel with engaging content.</p>
+      <p><strong>💻 Web Development</strong> – Built personal projects using HTML & CSS.</p>
+      <p><strong>💼 Office Manager</strong> – Worked for an LIC agent.</p>
+    </section>
+
+    <section class="card">
+      <h2>Vision & Goals</h2>
+      <p>My goal is to become a skilled entrepreneur and grow my YouTube channel by showing my journey.</p>
+      <p>I aim to build creative digital projects and reach a wider audience through content creation.</p>
+    </section>
+  </main>
+</div>
+
+<script>
+function toggleDarkMode() {
+  const body = document.body;
+  const btn = document.querySelector('.toggle-btn');
+  body.classList.toggle("dark");
+  
+  if (body.classList.contains("dark")) {
+    btn.innerHTML = "☀️ Light Mode";
+  } else {
+    btn.innerHTML = "🌙 Dark Mode";
+  }
+}
+</script>
+</body>
+</html>
